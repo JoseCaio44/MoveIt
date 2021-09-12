@@ -3,6 +3,7 @@
     --background: #F2F3F5;
     --gray-line: #DCDDE0;
     --text: #66666;
+    --green: #0F0;
 }
 
 * {
@@ -47,9 +48,23 @@ a {
     position: relative;
 }
 
+.experience-bar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+}
+
 .container {
     height: 100vh;
     max-width: 992px;
     margin: 0 auto;
     display: flex;
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+}
+
+span.current-experience {
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
 }
